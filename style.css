@@ -1,0 +1,292 @@
+/* css body e header */
+
+header {
+    background: url("img/bg.jpg");
+    padding: 16px 0;
+}
+
+.caixa-cor{
+    color: #ffffff;
+    font-size: 23px;
+}
+
+.caixa {
+    position: relative;
+    width: 1260px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 40%;
+    flex-flow: wrap;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+/* css da página inicial */
+.banner {
+    width: 610px;
+    height: 320px;
+    margin: auto;
+    display: flex;
+}
+
+.banner2{
+    width: 570px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+}
+
+.titulo-principal { 
+    text-align: center;
+    font-size: 29px; /* 2x o tamanho base */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.principal {
+    padding: 2em 0;
+    background: #FEFEFE;
+    width: 900px;
+    margin: auto;
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 180px;
+    float: left;
+    margin: 0 12px 12px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#fefefece,#8d8d8d);
+}
+
+.mapa-conteudo {
+    width: 100%;
+    overflow: hidden;
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+    font-size: 19px;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: linear-gradient(#888888c7, #ececec)
+
+}
+
+.conteudo-beneficios {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height:2.0;
+    display: block;
+    font-size: 21px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.itens:first-child {
+    font-weight:bold
+}
+
+.itens::before {
+    content: "🟊";
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 3;
+    transition: 400ms;
+    box-shadow: 5px 5px 5px  #000000;
+    display: inline-block;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.5;
+}
+
+
+/* css da página produtos */
+.produtos {
+    width: 905px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    border: 3px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover {
+    border-color: #C78C19;
+} 
+
+.produtos li:active {
+    border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+    font-size: 32px;
+}
+
+.produtos h2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.produto-descricao {
+    font-size: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.produto-preco {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* css footer e copyright  */
+footer {
+    text-align: center;
+    background: url("img/bg.jpg");
+    padding: 45px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.copyright2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* css da página contato */
+.main-contato {
+    width: 870px;
+    margin: 0 auto;
+} 
+
+form{
+    margin: 28px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 14spx;
+}
+
+
+table {
+    margin: 20px 0 20px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 3px solid #000000;
+    padding: 10px 10px;
+}
+
+.horarios{
+    font-size: 19px;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video, .produtos {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        text-align: center;
+    }
+
+    .lista-beneficios, .imagem-beneficios, .imagem-produtos, form {
+        width: 100%;
+        padding: 0 auto;
+    }
+
+    .produtos li {
+        display: block;
+        width: auto;
+        margin: 30px;
+    }
+
+    .main-contato {
+        width: auto;
+        margin-left: 3em;
+    }
+
+    .input-padrao {
+        width: 70%;
+    }
+
+    .enviar {
+        width: auto;
+    }
+}
+
+img{
+    max-width: 95%;
+}
